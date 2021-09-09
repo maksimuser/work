@@ -1,0 +1,57 @@
+.hero {
+  padding-top: 23px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.5;
+
+    letter-spacing: -0.4px;
+
+    color: #1652ac;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    position: relative;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.88;
+    letter-spacing: -0.4px;
+
+    color: #020303;
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    &::before {
+      position: absolute;
+      width: 227px;
+      content: '';
+      left: 0;
+      top: 0;
+      border: 7px solid #edeff3;
+    }
+
+    &::after {
+      position: absolute;
+      width: 227px;
+      content: '';
+      left: 0;
+      bottom: 0;
+      border: 7px solid #edeff3;
+    }
+  }
+}
+
+.hero__thumb {
+  height: 655px;
+  width: 653px;
+}
+
+.hero__thumb > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+}
