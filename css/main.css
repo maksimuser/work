@@ -440,12 +440,12 @@ a {
 
 .slider .carousel-control-next-icon {
   right: 0;
-  background-image: url("../../img/svg/arr_next.svg");
+  background-image: url(../img/svg/arr_next.svg);
 }
 
 .slider .carousel-control-prev-icon {
   left: 0;
-  background-image: url("../../img/svg/arr_prev.svg");
+  background-image: url(../img/svg/arr_prev.svg);
 }
 
 .slider__title {
