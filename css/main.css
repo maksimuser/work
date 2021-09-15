@@ -237,6 +237,7 @@ a {
 .hotToCold__img {
   background-image: url("../../img/IconHotToCold_mobile.png");
   background-repeat: no-repeat;
+  background-size: auto auto;
   background-position: center top -200px;
 }
 
