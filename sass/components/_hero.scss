@@ -1,57 +1,89 @@
 .hero {
-  padding-top: 23px;
+  padding-top: 56px;
 
   &__title {
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 1.5;
-
-    letter-spacing: -0.4px;
-
-    color: #1652ac;
-    margin-bottom: 35px;
-  }
-
-  &__text {
     position: relative;
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: bold;
+    font-size: 33px;
     line-height: 1.88;
     letter-spacing: -0.4px;
 
-    color: #020303;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    color: #1652ac;
 
-    &::before {
-      position: absolute;
-      width: 227px;
-      content: '';
-      left: 0;
-      top: 0;
-      border: 7px solid #edeff3;
-    }
-
+    padding-bottom: 44px;
     &::after {
       position: absolute;
-      width: 227px;
       content: '';
-      left: 0;
+
+      width: 227px;
       bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
       border: 7px solid #edeff3;
     }
   }
-}
 
-.hero__thumb {
-  height: 655px;
-  width: 653px;
-}
+  &__text {
+    font-weight: 600;
+    line-height: 2;
 
-.hero__thumb > img {
-  display: block;
-  height: 100%;
-  width: 100%;
+    color: #020303;
+    padding-bottom: 40px;
+  }
 
-  object-fit: cover;
+  @media screen and(min-width:992px) {
+    &__wrapper {
+      position: relative;
+    }
+    &__title {
+      position: absolute;
+      font-size: 40px;
+      line-height: 1.5;
+      bottom: 55%;
+
+      &::after {
+        bottom: 0;
+        left: 33%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__text {
+      position: relative;
+      font-size: 17px;
+
+      line-height: 1.88;
+      padding-bottom: 115px;
+
+      &::before {
+        position: absolute;
+        content: '';
+
+        width: 227px;
+        bottom: 25%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+
+        border: 7px solid #edeff3;
+      }
+    }
+  }
+  @media screen and(min-width:1200px) {
+    &__title {
+      font-size: 48px;
+      bottom: 50%;
+
+      &::after {
+        left: 27%;
+      }
+    }
+    &__text {
+      padding-bottom: 150px;
+      &::before {
+        bottom: 29%;
+        left: 23%;
+      }
+    }
+  }
 }

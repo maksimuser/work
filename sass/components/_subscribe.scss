@@ -1,0 +1,88 @@
+.subscribe {
+  padding-top: 48px;
+  padding-bottom: 10px;
+
+  &__logo {
+    margin-bottom: 27px;
+  }
+  &__title {
+    font-size: 26px;
+    line-height: 1.65;
+    margin-bottom: 32px;
+
+    letter-spacing: -0.4px;
+
+    color: #1652ac;
+  }
+
+  &__text {
+    padding-right: 39px;
+    padding-left: 32px;
+    margin-bottom: 45px;
+
+    line-height: 2;
+    letter-spacing: -0.4px;
+
+    color: #45494f;
+  }
+
+  &__link {
+    font-weight: 600;
+
+    letter-spacing: -0.4px;
+
+    color: #2e75ff;
+  }
+  &__btn {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2.5;
+
+    width: 100%;
+    letter-spacing: 1.42px;
+
+    border-radius: 12px;
+    background: linear-gradient(180deg, #0c5cd6 0%, rgba(0, 56, 140, 0) 100%),
+      #004fc7;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 4px rgba(48, 67, 133, 0.5);
+  }
+  .btn__arrow {
+    position: absolute;
+    bottom: 35%;
+    left: 0;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding-top: 73px;
+    padding-bottom: 77px;
+    &__btn {
+      width: 306px;
+    }
+    .btn__arrow {
+      bottom: 40%;
+      width: 79px;
+    }
+    &__logo {
+      padding: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &__title {
+      font-size: 34px;
+      line-height: 1.26;
+    }
+
+    &__text {
+      padding-right: 0;
+      padding-left: 0;
+      font-size: 17px;
+      line-height: 1.88;
+      letter-spacing: -0.4px;
+
+      color: #45494f;
+    }
+  }
+}

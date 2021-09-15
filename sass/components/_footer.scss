@@ -1,0 +1,53 @@
+.footer {
+  background: #ffffff;
+
+  padding: 45px 8px 57px 32px;
+
+  &__title {
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 2;
+
+    letter-spacing: -0.4px;
+
+    color: #a3adba;
+  }
+  &__list {
+    text-decoration: underline;
+  }
+  &__text,
+  &__link {
+    font-size: inherit;
+    line-height: 2;
+
+    letter-spacing: -0.4px;
+
+    color: #9eabbb;
+  }
+  &__link {
+    line-height: 2.62;
+  }
+  &__link--dark {
+    color: #45494f;
+  }
+  &__link--blue {
+    color: #2e75ff;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 50px 8px 54px 121px;
+    &__title {
+      font-size: 17px;
+      line-height: 2;
+    }
+
+    &__text {
+      font-size: 17px;
+      line-height: 1.88;
+    }
+    &__link {
+      font-size: 17px;
+      line-height: 1.88;
+    }
+  }
+}

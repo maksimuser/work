@@ -1,15 +1,14 @@
 .systems {
-  padding-top: 24px;
-
+  padding-bottom: 30px;
   &__title {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 2;
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.22;
 
     letter-spacing: 2.42px;
 
     color: #1652ac;
-    margin-bottom: 23px;
   }
 
   &__text {
@@ -19,18 +18,10 @@
     color: #45494f;
   }
 
-  padding-bottom: 66px;
-}
-
-.thumb {
-  height: 477px;
-  width: 602px;
-}
-
-.thumb > img {
-  display: block;
-  height: 100%;
-  width: 100%;
-
-  object-fit: cover;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+    &__title {
+      font-size: 20px;
+    }
+  }
 }

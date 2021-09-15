@@ -1,18 +1,37 @@
-.standards__title {
-  font-style: 700;
-  font-size: 20px;
-  line-height: 2;
-  margin-bottom: 22px;
-  letter-spacing: 2.42px;
-  color: #fbfdff;
-}
-.standards__text {
-  font-size: 17px;
-  line-height: 1.88;
+.standards {
+  &__wrapper {
+    padding: 39px 0 25px 0;
+    background: linear-gradient(180deg, #163da2 0%, #003584 100%);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.22;
 
-  color: white;
-}
+    letter-spacing: 2.42px;
+    color: #fbfdff;
+  }
+  &__text {
+    line-height: 2;
+    letter-spacing: -0.4px;
+    color: #fbfdff;
+  }
+  @media screen and (min-width: 768px) {
+    &__wrapper {
+      padding: 70px 60px;
+    }
+  }
+  @media screen and (min-width: 1140px) {
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 17px;
+      line-height: 1.88;
+    }
 
-.standards__descr {
-  padding: 151px 157px 119px 160px;
+    &__wrapper {
+      padding: 151px 148px 100px 133px;
+    }
+  }
 }

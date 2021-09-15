@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-
   // outline: 1px solid orange;
 }
 
@@ -31,6 +25,7 @@ nav {
 }
 
 ul,
+li,
 a {
   margin-top: 0;
   margin-bottom: 0;
@@ -40,8 +35,17 @@ a {
   text-decoration: none;
 }
 
-// img {
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-// }
+.wrapper {
+  padding-top: 27px;
+  padding-bottom: 53px;
+
+  background-color: #fbfbfc;
+  // background-color: gray;
+
+  @media screen and(min-width: 992px) {
+    padding-top: 67px;
+    padding-bottom: 70px;
+    padding-left: 121px;
+    padding-right: 121px;
+  }
+}

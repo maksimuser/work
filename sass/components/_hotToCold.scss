@@ -1,0 +1,54 @@
+.hotToCold {
+  padding-top: 45px;
+
+  &__title {
+    font-weight: 700;
+    padding-top: 200px;
+    font-size: 18px;
+    line-height: 2.22;
+    text-transform: uppercase;
+    letter-spacing: 2.42px;
+    color: #1652ac;
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 1.88;
+    color: #45494f;
+    padding-bottom: 50px;
+  }
+  &__img {
+    background-image: url('../../img/IconHotToCold_mobile.png');
+    background-repeat: no-repeat;
+
+    background-position: center top -200px;
+  }
+
+  @media screen and(min-width: 768px) {
+    &__img {
+      background-image: url('../../img/IconHotToCold.png');
+      background-position: right top -275px;
+    }
+    &__title {
+      padding-top: 350px;
+    }
+  }
+
+  @media screen and(min-width: 992px) {
+    &__img {
+      background-position: right -100px center;
+    }
+    &__title {
+      font-size: 20px;
+
+      padding-top: 0;
+      padding-right: 20px;
+    }
+  }
+  @media screen and(min-width: 1200px) {
+    &__img {
+      background-position: right top -274px;
+    }
+  }
+}

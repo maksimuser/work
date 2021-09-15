@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,8 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <!-- header start -->
+    <header class="header">
       <nav
         class="
           navbar navbar-expand-lg navbar-light
@@ -27,12 +28,12 @@
           rounded
         "
       >
-        <div class="container-xl">
-          <a class="navbar-brand" href="#"
-            ><img src="./img/logoMd.png" alt="logo"
-          /></a>
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo_xl.png" alt="logo" />
+          </a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler burger-menu"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -106,50 +107,70 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class="hero">
-        <div class="container-xl">
-          <div class="row align-items-center">
-            <div class="col-6">
-              <h1 class="hero__title">
-                Luftkondensierte Kältemaschinen <br />& Kaltwassersätze
-              </h1>
-              <p class="hero__text">
-                Aufgrund der kompakten Bauart werden platzsparende
-                luftkondensierte Kompressionskältemaschinen <br />(umgangsspr.
-                „Kaltwassersätze“) vielseitig zur <br />
-                Prozesskühlung und Gebäudeklimatisierung eingesetzt.
-              </p>
-            </div>
+    <!-- header start -->
 
-            <div class="col-6">
-              <div class="hero__thumb">
+    <main>
+      <!-- section hero start -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="row">
+              <div class="g-0 text-center text-lg-start">
+                <h1 class="hero__title px-3">
+                  Luftkondensierte <br />
+                  Kältemaschinen <br />& Kaltwassersätze
+                </h1>
+              </div>
+            </div>
+            <div class="row align-items-md-end">
+              <div class="col-sm-12 col-md-7 g-0 order-md-last">
                 <img
-                  src="./img/Air Colled Chillers Small - MRS Transparent3_3 2.png"
+                  class="img-fluid rounded float-end"
+                  src="./img/Air Colled Chillers Small - MRS Transparent3.png"
                   alt="Air Colled Chillers Small"
                 />
+              </div>
+
+              <div
+                class="
+                  col-sm-12 col-md-5
+                  order-md-first
+                  g-0
+                  hero__text__wrapper
+                "
+              >
+                <p class="hero__text text-start px-3">
+                  Aufgrund der kompakten Bauart werden platzsparende
+                  luftkondensierte Kompressionskältemaschinen (umgangsspr.
+                  „Kaltwassersätze“) vielseitig zur Prozesskühlung und
+                  Gebäudeklimatisierung eingesetzt.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- section hero end -->
+
+      <!-- section systems start -->
       <section class="systems">
         <div class="container">
           <div class="row">
-            <div class="col-7">
-              <div class="thumb">
-                <img
-                  src="./img/Multistage MSW-MSA - Refrigeration Systems 1.png"
-                  alt="Multistage MSW-MSA "
-                />
-              </div>
+            <div class="col-sm-12 col-lg-7 g-0">
+              <img
+                class="img-fluid"
+                src="./img/Multistage MSW-MSA - Refrigeration Systems.png"
+                alt="Multistage MSW-MSA "
+              />
             </div>
 
-            <div class="col-4">
-              <h2 class="systems__title">ENERGIEEFFIZIENZ IM FOKUS</h2>
-              <p class="systems__text">
+            <div class="col-sm-12 col-lg-5 g-0 px-3 float-end">
+              <h2 class="systems__title text-center px-3 text-lg-start">
+                ENERGIEEFFIZIENZ IM FOKUS
+              </h2>
+              <p class="systems__text px-md-3">
                 Bei der Anschaffung sollte deshalb besonders auf
-                <b>energieeffiziente Systeme</b> geachtet werden, denn die
+                <b> energieeffiziente Systeme </b> geachtet werden, denn die
                 Betriebskosten der Anlage überschreiten erfahrungsgemäß über die
                 Lebensdauer hinweg die einmaligen Anschaffungskosten um ein
                 vielfaches.
@@ -165,23 +186,22 @@
           </div>
         </div>
       </section>
+      <!-- section systems end -->
 
+      <!-- section standards start -->
       <section class="standards">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-5">
-              <img src="./img/asv4sabu 3.png" alt="asv4sabu" />
+            <div class="col-sm-12 col-lg-5 g-0">
+              <img class="w-100" src="./img/asv4sabu.png" alt="asv4sabu" />
             </div>
 
-            <div
-              class="col-7 standards__descr"
-              style="background-color: #163da1"
-            >
-              <h2 class="standards__title">MODERNSTE STANDARDS</h2>
-              <p class="standards__text">
+            <div class="col-sm-12 col-lg-7 g-0 standards__wrapper">
+              <h2 class="standards__title px-3 pb-4">MODERNSTE STANDARDS</h2>
+              <p class="standards__text px-3">
                 Aktuelle Richtlinien und Verordnungen bezüglich des
-                <b>Kältemittel Phase-Downs</b> müssen berücksichtigt werden. Der
-                langfristige Einsatz des Kältemittels muss sowohl nach
+                <b> Kältemittel Phase-Downs </b> müssen berücksichtigt werden.
+                Der langfristige Einsatz des Kältemittels muss sowohl nach
                 ökonomischen als auch strategischen Gesichtspunkten entschieden
                 werden.
 
@@ -191,15 +211,553 @@
                 Alle unsere Kältemaschinen entsprechen dem modernsten Stand der
                 Technik und werden in den unterschiedlichsten Branchen
                 eingesetzt. Unser Angebot umfasst ein
-                <b>breites Sortiment an natürlichen und frigenen Kältemitteln</b
+                <b>
+                  breites Sortiment an natürlichen und frigenen Kältemitteln </b
                 >, die den aktuellsten Normen und Verordnungen entsprechen.
               </p>
             </div>
           </div>
         </div>
       </section>
+      <!-- section standards end -->
+
+      <!-- section hotToCold start -->
+      <section class="hotToCold">
+        <div class="hotToCold__img">
+          <div class="container">
+            <div class="col-sm-12 col-lg-6">
+              <h2 class="hotToCold__title text-center text-md-start">
+                Unsere Spezialität besteht aus unseren Kaltwassersätzen mit
+                integrierter Freikühleinheit.
+              </h2>
+
+              <p class="hotToCold__text">
+                <i>Doppelkanal Mikrochannel Wärmetauscher</i> kühlen das
+                Prozesswasser energiesparend über ambiente Umgebungsluft.
+                <br />
+                <br />
+
+                <b
+                  >Nur bei heißen Außentemperaturen erfolgt die Umschaltung auf
+                  Kompressionskälteerzeugung. Diese Maximierung der Freikühlzeit
+                  erzielt größtmögliche Kosteneinsparungen
+                </b>
+                <br />
+                auch bei kleinen Nennleistungen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section hotToCold end -->
+
+      <!-- wrapper start -->
+      <div class="wrapper">
+        <!-- section benefits start -->
+        <section class="benefits g-lg-0">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2 class="text-center benefits__title mb-5">IHRE VORTEILE</h2>
+              </div>
+            </div>
+
+            <div class="row gy-2 justify-content-center benefits__list">
+              <div class="col-sm-12 col-md-4 px-4 mx-1 benefits__item">
+                <img
+                  src="./img/svg/geringe.svg"
+                  alt=""
+                  width="46"
+                  height="37"
+                />
+                <span class="benefits__text">Geringe Stellfläche</span>
+              </div>
+
+              <div class="col-sm-12 col-md-4 px-4 mx-1 benefits__item">
+                <img src="./img/svg/snow.svg" alt="" width="49" height="56" />
+                <span class="benefits__text px-5"
+                  >Mit und ohne integrierter Freikühlung</span
+                >
+              </div>
+              <div class="col-sm-12 col-md-4 px-4 mx-1 benefits__item">
+                <img src="./img/svg/sun.svg" alt="" width="56" height="56" />
+                <span class="benefits__text"
+                  >Für Außentemperaturen bis +55°C</span
+                >
+              </div>
+
+              <div class="col-sm-12 col-md-4 px-4 mx-1 benefits__item">
+                <img src="./img/svg/camp.svg" alt="" width="71" height="42" />
+                <span class="benefits__text"
+                  >Für Außen- und Innenaufstellung erhältlich</span
+                >
+              </div>
+              <div class="col-sm-12 col-md-4 px-4 mx-1 benefits__item">
+                <img src="./img/svg/car.svg" alt="" width="46" height="37" />
+                <span class="benefits__text"
+                  >Betriebsbereit bei Anlieferung</span
+                >
+              </div>
+              <div class="col-sm-12 col-md-4 px-4 mx-1 benefits__item">
+                <img src="./img/svg/lamp.svg" alt="" width="46" height="37" />
+                <span class="benefits__text"
+                  >Automatische Freikühlschaltung für verringerten
+                  Energieverbrauch</span
+                >
+              </div>
+
+              <div class="col-sm-12 col-md-4 px-4 mx-1 benefits__item">
+                <img
+                  src="./img/svg/brilliant.svg"
+                  alt=""
+                  width="46"
+                  height="37"
+                />
+                <span class="benefits__text"
+                  >Robustes Gehäuse für Außenaufstellung</span
+                >
+              </div>
+              <div class="col-sm-12 col-md-4 px-4 mx-1 benefits__item">
+                <img src="./img/svg/mute.svg" alt="" width="46" height="37" />
+                <span class="benefits__text">Geringe Schallemissionen</span>
+              </div>
+              <div class="col-sm-12 col-md-4 px-4 mx-1 benefits__item">
+                <img src="./img/svg/sky.svg" alt="" width="46" height="37" />
+                <span class="benefits__text">Wetterfest und Langlebig</span>
+              </div>
+
+              <div class="col-sm-12 col-md-4 px-4 mx-1 benefits__item">
+                <img
+                  src="./img/svg/protection.svg"
+                  alt=""
+                  width="46"
+                  height="37"
+                />
+                <span class="benefits__text">Erhöhte Betriebssicherheit</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section benefits end -->
+
+        <!-- section features start -->
+        <section class="features g-lg-0">
+          <div class="container">
+            <div class="features__wrapper mx-auto">
+              <div class="row g-0">
+                <div class="col-sm-12">
+                  <h2 class="features__title text-center">HAUPTMERKMALE</h2>
+                </div>
+              </div>
+
+              <div class="row g-0 justify-content-center mx-auto">
+                <div class="col-sm-12 col-md-6 features__list">
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9312;</div>
+                    <div class="col">
+                      <p class="features__text">
+                        25 verschiedene Modelle von
+                        <b> 6 kW bis 600 kW </b> Kühlleistung
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9313;</div>
+                    <div class="col">
+                      <p class="features__text ps-3">
+                        Volumenströme von <b> 1,5 m³/h bis 140 m³/h </b>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9314;</div>
+                    <div class="col">
+                      <p class="features__text px-3">
+                        Auswahl aus <b>50 verschiedenen Prozesspumpen</b> im
+                        Hochfluss- und Hochdruckbereich
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9315;</div>
+                    <div class="col">
+                      <p class="features__text px-3">
+                        Kompakteinheiten mit
+                        <b
+                          >integrierten Pumpen, Drucktanks, Filtern,
+                          Steuerungen</b
+                        >
+                        (optional mit Reservepumpe)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9316;</div>
+                    <div class="col">
+                      <p class="features__text px-3">
+                        <b>Mikrochannel Verflüssiger</b> für höchste
+                        Energieeffizienz
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9317;</div>
+                    <div class="col">
+                      <p class="features__text px-3">
+                        Mit optionalen
+                        <b>Kompressor Schallschutzummantelungen</b>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9318;</div>
+                    <div class="col">
+                      <p class="features__text px-3">
+                        <b>Schallmindernde Ventilatortechnik</b> erhältlich
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 features__list">
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9319;</div>
+                    <div class="col">
+                      <p class="features__text px-3">
+                        <b>Scroll, Multiscroll</b> und
+                        <b>Schraubenkompressoren</b>
+                        (optional mit Frequenzumrichter) erhältlich
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9320;</div>
+                    <div class="col">
+                      <p class="features__text px-3">
+                        <b>Automatische Leistungssteuerung</b> für Prozesse mit
+                        variabler Kühllast
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9321;</div>
+                    <div class="col">
+                      <p class="features__text px-3">
+                        <b> Kleine Kältemittelvolumen</b> dank extrakompakter
+                        Bauweise
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9322;</div>
+                    <div class="col">
+                      <p class="features__text px-3">
+                        Auswahl aus
+                        <b
+                          >verschiedenen Low-GWP Kältemitteln, u.a. R513a,
+                          R1234ze und R290 (Propan)</b
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9323;</div>
+                    <div class="col">
+                      <p class="features__text px-3">
+                        Mit <b>automatischen Glykol Nachfüllsystemem</b>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9324;</div>
+                    <div class="col">
+                      <p class="features__text px-3">Mit <b> Remote HMI</b></p>
+                    </div>
+                  </div>
+
+                  <div class="features__item">
+                    <div class="col-1 text-center fw-bold">&#9325;</div>
+                    <div class="col">
+                      <p class="features__text px-3">
+                        <b
+                          >Erhöhte Betriebssicherheit mit bis zu 4
+                          Kühlkreisläufen</b
+                        >
+                        pro Maschine
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section features end -->
+
+        <!-- section slider start -->
+        <section class="slider g-lg-0">
+          <div class="container">
+            <div class="slider__wrapper">
+              <div class="row g-0">
+                <div class="col-12">
+                  <h2 class="slider__title text-center slider__title">
+                    BILDER
+                  </h2>
+                </div>
+              </div>
+
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="slider carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./img/asv4sabu_slider_lg.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/asv4sabu_slider_mobile.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/Air Colled Chillers Small - MRS Transparent3_slider_mobile.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="slider carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button
+                  class="slider carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Следующий</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section slider end -->
+
+        <!-- section visitors start -->
+        <section class="visitors g-lg-0">
+          <div class="container">
+            <div class="row g-0">
+              <div class="col-12">
+                <h2 class="visitors__title text-center mx-auto">
+                  BESUCHER DIESER SEITE SUCHTEN AUCH OFT NACH:
+                </h2>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-sm-12 col-md-6 col-xl-4 mb-2 d-grid gap-1">
+                <a href="#!" class="visitors__btn py-3 btn-lg btn-primary"
+                  >GLYKOLWANNEN</a
+                >
+              </div>
+              <div class="col-sm-12 col-md-6 col-xl-4 mb-2 d-grid gap-1">
+                <a href="#!" class="visitors__btn py-3 btn-lg btn-primary"
+                  >WASSERAUFBEREITUNG</a
+                >
+              </div>
+              <div class="col-sm-12 col-md-6 col-xl-4 mb-2 d-grid gap-1">
+                <a href="#!" class="visitors__btn py-3 btn-lg btn-primary"
+                  >ROHRLEITUNGSBAU</a
+                >
+              </div>
+              <div class="col-sm-12 col-md-6 col-xl-4 mb-2 d-grid gap-1">
+                <a
+                  href="#!"
+                  class="visitors__btn py-3 btn-lg btn-primary text-uppercase"
+                  >Wärmemengenmessungen</a
+                >
+              </div>
+              <div class="col-sm-12 col-md-6 col-xl-4 mb-2 d-grid gap-1">
+                <a href="#!" class="visitors__btn py-3 btn-lg btn-primary"
+                  >ANLAGELEASING</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section visitors end -->
+      </div>
+      <!-- wrapper end -->
+
+      <!-- subscribe start -->
+      <section class="subscribe border-top border-bottom">
+        <div class="container">
+          <div class="row text-center justify-content-center">
+            <div
+              class="
+                col-ms-12 col-md-6 col-xl-3
+                order-xl-3
+                align-self-md-center
+              "
+            >
+              <a href="#!">
+                <img
+                  class="subscribe__logo"
+                  src="./img/svg/Logo3black 2.svg"
+                  alt="logo"
+              /></a>
+            </div>
+            <div
+              class="
+                col-ms-12 col-md-6 col-xl-5
+                order-xl-1
+                align-self-md-center
+                text-lg-start
+              "
+            >
+              <h3 class="subscribe__title fw-bold">
+                Jetzt Termin vereinbaren!
+              </h3>
+            </div>
+            <div class="col-ms-12 col-md-6 col-xl-4 text-start g-0 order-xl-2">
+              <div class="subscribe__text mx-md-0">
+                <p>
+                  Gerne stehen wir Ihnen für eine individuelle Beratung
+                  telefonisch und vor Ort zur Verfügung und freuen uns über Ihre
+                  Kontaktaufnahme. Sprechen Sie uns an!
+                  <br />
+                  <br />
+
+                  Fragen Sie nach einem Rückruf oder kontaktieren Sie uns unter:
+                  <a href="#!" class="card-link lh-lg subscribe__link"
+                    >info@elsasser-technik.de</a
+                  >
+                </p>
+              </div>
+              <div class="d-grid px-2 px-md-0">
+                <button
+                  class="btn btn-primary subscribe__btn mx-md-0 mx-auto"
+                  type="button"
+                >
+                  <img
+                    class="btn__arrow"
+                    src="./img/svg/arrow.svg"
+                    alt="arrow"
+                  />
+                  Kontakt
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- subscribe end -->
     </main>
-    <footer></footer>
+
+    <!-- section footer start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <address class="footer__address col-sm-12 col-md-6 col-xl-4 g-0">
+            <h5 class="footer__title">Elsässer Kältetechnik</h5>
+            <a
+              href="https://goo.gl/maps/W5oebnsyZEFkHvBu5"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__link"
+              >Königsallee 14 <br />
+              40212 Düsseldorf
+            </a>
+          </address>
+
+          <address class="col-sm-12 col-md-6 col-xl-4 g-0">
+            <h5 class="footer__title">Kontakt</h5>
+
+            <p class="footer__text">
+              Telefon:
+              <a class="footer__link--dark" href="tel:+49(0)21192323052">
+                +49 (0) 211 9232 3052
+              </a>
+            </p>
+
+            <p class="footer__text">
+              E-Mail:
+              <a
+                class="footer__link--blue"
+                href="mailto:info@elsasser-technik.de"
+              >
+                info@elsasser-technik.de
+              </a>
+            </p>
+          </address>
+
+          <div class="col-sm-12 col-md-12 col-xl-4 g-0">
+            <h5 class="footer__title">Shortlinks</h5>
+            <ul class="footer__list">
+              <div class="row g-0">
+                <div class="col-sm-12 col-md-6">
+                  <li>
+                    <a class="footer__link" href="#!">Kontakt </a>
+                  </li>
+                  <li>
+                    <a class="footer__link" href="#!">Rückruf vereinbaren </a>
+                  </li>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <li><a class="footer__link" href="#!">Impressum </a></li>
+                  <li><a class="footer__link" href="#!">Datenschutz </a></li>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- section footer end -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
