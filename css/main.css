@@ -235,7 +235,7 @@ a {
 }
 
 .hotToCold__img {
-  background-image: url("../../img/IconHotToCold_mobile.png");
+  background-image: url(../../img/IconHotToCold_mobile.png);
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center top -200px;
@@ -243,7 +243,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .hotToCold__img {
-    background-image: url("../../img/IconHotToCold.png");
+    background-image: url(../../img/IconHotToCold.png);
     background-position: right top -275px;
   }
   .hotToCold__title {
